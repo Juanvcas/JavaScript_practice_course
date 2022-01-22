@@ -8,6 +8,47 @@
 </head>
 <body>
     <h1>Geomatric Figures</h1>
+    <section>
+        <h2>Square/Rectangle</h2>
+        <form action="">
+            <label for="sqr_width">
+                <span>Rectangle's width</span>
+                <input type="number" name="sqr_width" id="sqr_width">
+            </label>
+            <label for="sqr_heigth">
+                <span>Rectangle's heigth</span>
+                <input type="number" name="sqr_heigth" id="sqr_heigth">
+            </label>
+            <button type="button" onclick="squarePerimeter()">Calculate Perimeter</button>
+            <button type="button" onclick="squareArea()">Calculate Area</button>
+        </form>
+    </section>
+    <section>
+        <h2>Isosceles Triangle</h2>
+        <form action="">
+            <label for="trg_side">
+                <span>Triangle's side</span>
+                <input type="number" name="trg_side" id="trg_side">
+            </label>
+            <label for="trg_base">
+                <span>Triagle's base</span>
+                <input type="number" name="trg_base" id="trg_base">
+            </label>
+            <button type="button" onclick="trianglePerimeter()">Calculate Perimeter</button>
+            <button type="button" onclick="triangleArea()">Calculate Area</button>
+        </form>
+    </section>
+    <section>
+        <h2>Perfect Circle</h2>
+        <form action="">
+            <label for="crl_radius">
+                <span>Circle's radius</span>
+                <input type="number" name="crl_radius" id="crl_radius">
+            </label>
+            <button type="button" onclick="circlePerimeter()">Calculate Perimeter</button>
+            <button type="button" onclick="circleArea()">Calculate Area</button>
+        </form>
+    </section>
     
     <script src="./figures.js"></script>
 </body>

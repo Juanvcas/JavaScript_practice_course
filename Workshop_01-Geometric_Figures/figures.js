@@ -14,14 +14,20 @@
 // console.log("The square's area is: " + squareArea + "cm²");
 // console.groupEnd();
 
-function squarePerimeter(side) {
-    const calc = side * 4;
-    return calc + "cm";
+function squarePerimeter() {
+    const width = document.getElementById("sqr_width");
+    const heigth = document.getElementById("sqr_heigth");
+    const calc = (width.value * 2) + (heigth.value * 2);
+    const result = calc.toFixed(2);
+    return alert(result + "cm");
 }
 
-function squareArea(side) {
-    const calc = side ** 2;
-    return calc + "cm²";
+function squareArea() {
+    const width = document.getElementById("sqr_width");
+    const heigth = document.getElementById("sqr_heigth");
+    const calc = width.value * heigth.value;
+    const result = calc.toFixed(2);
+    return alert(result + "cm²");
 }
 
 
@@ -48,15 +54,21 @@ function squareArea(side) {
 
 // console.groupEnd();
 
-function trianglePerimeter(side,base) {
-    const calc = side + side + base;
-    return calc + "cm";
+function trianglePerimeter() {
+    const side = document.getElementById("trg_side");
+    const base = document.getElementById("trg_base");
+    const calc = parseFloat(side.value) + parseFloat(side.value) + parseFloat(base.value);
+    const result = calc.toFixed(2);
+    return alert(result + "cm");
 }
 
-function triangleArea(side,base) {
-    const height = Math.sqrt(((base / 2) ** 2) + (side ** 2));
-    const calc = (height * base) / 2;
-    return calc + "cm²";
+function triangleArea() {
+    const side = document.getElementById("trg_side");
+    const base = document.getElementById("trg_base");
+    const height = Math.sqrt(((base.value / 2) ** 2) + (side.value ** 2));
+    const calc = (height * base.value) / 2;
+    const result = calc.toFixed(2);
+    return alert(result + "cm²");
 }
 
 
@@ -81,13 +93,17 @@ function triangleArea(side,base) {
 // console.log("The circle's area is: " + circleArea + "cm²");
 // console.groupEnd();
 
-function circlePerimeter(radius) {
-    const diameter = radius * 2;
+function circlePerimeter() {
+    const radius = document.getElementById("crl_radius");
+    const diameter = radius.value * 2;
     const calc = diameter * Math.PI;
-    return calc + "cm";
+    const result = calc.toFixed(2);
+    return alert(result + "cm");
 }
 
-function circleArea(radius) {
-    const calc = (radius ** 2) * Math.PI;
-    return calc + "cm²";
+function circleArea() {
+    const radius = document.getElementById("crl_radius");
+    const calc = (radius.value ** 2) * Math.PI;
+    const result = calc.toFixed(2);
+    return alert(result + "cm²");
 }
