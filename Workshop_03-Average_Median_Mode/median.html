@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average, Median and Mode</title>
+</head>
+<body>
+    <main class="main">
+        <h1>Median</h1>
+        <p>Here. you can calculate the median between the values that you need.</p>
+        <section class="main__values">
+            <form action="" class="values__formV">
+                <p>Put the value to add to the list.</p>
+                <label for="">
+                    <span>Insert Value</span>
+                    <input type="text" name="values" id="values">
+                </label>
+                <button type="button" onclick="addValues()">Add value</button>
+                <button type="button" onclick="cleanValues()">Clean</button>
+                <article id="formV__values">
+
+                </article>
+            </form>
+        </section>
+        <section class="stats">
+            <div class="stats__average">
+                <button type="button" onclick="median()">Calculate Median</button>
+            </div>
+        </section>
+        <section id="result">
+
+        </section>
+    </main>
+    <script src="./median.js"></script>
+</body>
+</html>
