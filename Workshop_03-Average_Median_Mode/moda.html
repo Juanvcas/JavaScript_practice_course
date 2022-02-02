@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+</head>
+<body>
+    <main class="main">
+        <h1>Moda</h1>
+        <p>Here, you can calculate the moda.</p>
+        <section class="main__values">
+            <form action="" class="values__form">
+                <p>Put the values to calculate</p>
+                <label for="values">
+                    <span>Inser Value</span>
+                    <input type="text" name="values" id="values">
+                    <div id="inpError"></div>
+                </label>
+                <button type="button" onclick="addValues()">Add Value</button>
+                <button type="button" onclick="clearValues()">Clear Values</button>
+            </form>
+            <section id="values__list"></section>
+        </section>
+        <section class="main__result">
+            <button type="button" onclick="modaResult()">Calculate Moda</button>
+            <div id="result__error"></div>
+            <section id="result__out"></section>
+        </section>
+    </main>
+    <script src="./moda.js"></script>
+</body>
+</html>
