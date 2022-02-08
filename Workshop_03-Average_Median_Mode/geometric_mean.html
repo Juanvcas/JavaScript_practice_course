@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Mean</title>
+</head>
+<body>
+    <main class="main">
+        <section class="avgs__geo avgs">
+            <h2>Geometric Median</h2>
+            <form action="" class="geo__form form">
+                <p>Put just the percentage value to add to the list.</p>
+                <label for="geo__inp">
+                    <span>Inser Value:</span>
+                    <input type="number" name="geo__inp" id="geo__inp">
+                    <div id="geo__error"></div>
+                </label>
+                <div class="form__butt geo__butt">
+                    <button type="button" onclick="addGeoValues()">Add Value</button>
+                    <button type="button" onclick="clearGeoValues()">Clear Values</button>
+                </div>
+                <section id="geo__values" class="values"></section>
+            </form>
+            <div class="geo__calc calc">
+                <button type="button" onclick="geoResult()">Calculate Moda</button>
+                <p id="geoCalc__error"></p>
+            </div>
+            <article id="geo__result" class="result"></article>
+        </section>
+    </main>
+    <script src="./geometric_mean.js"></script>
+</body>
+</html>

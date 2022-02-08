@@ -1,4 +1,5 @@
 const values = [];
+// investigar "split()"
 
 function addValues() {
     const inpValues = document.getElementById("values");
