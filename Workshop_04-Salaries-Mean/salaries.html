@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salaries Mean</title>
+</head>
+<body>
+    <main class="main">
+        <h1>Salary Mean</h1>
+        <p>Here, you can calculate the salary's media.</p>
+        <section class="main__values">
+            <form action="" class="values__form">
+                <p>Add people to the list to calculate</p>
+                <label for="nameValue">
+                    <span>Name</span>
+                    <input type="text" name="nameValue" id="nameValue">
+                    <div id="nameError"></div>
+                </label>
+                <label for="salaryValue">
+                    <span>Salary</span>
+                    <input type="number" name="salaryValue" id="salaryValue">
+                    <div id="salaryError"></div>
+                </label>
+                <button type="button" onclick="addPerson()">Add Peron</button>
+                <button type="button" onclick="clearList()">Clear Values</button>
+            </form>
+            <section id="people__list"></section>
+        </section>
+        <section class="main__result">
+            <button type="button" onclick="salaryMedian()">Calculate Media</button>
+            <button type="button" onclick="topSalary()">Top Salary</button>
+            <div id="result__error"></div>
+            <section id="result__out"></section>
+            <section id="result__out2"></section>
+        </section>
+    </main>
+    <script src="./salaries.js"></script>
+    <script src="./analysis.js"></script>
+</body>
+</html>
